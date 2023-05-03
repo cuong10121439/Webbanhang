@@ -1,0 +1,465 @@
+/*Header*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    /*font-family: 'Delicious Handrawn', cursive;*/
+    text-decoration: none;
+
+   
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background: linear-gradient(245.59deg, #57C5B6 0%, #159895 28.53%, #1A5F7A 75.52%);}
+header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    height: 15px;
+    background-image: linear-gradient(-30deg, #ffffff 30%, transparent 35%, transparent 35%, #ccf5fa 40%, #b2ecf5 98%, transparent 75%, transparent);
+  }
+header img{
+    width: 45%;
+    padding-bottom:15px ;
+}
+.logo{
+    font-size: 35px;
+    text-decoration: none;
+    font-weight: 700;
+    color:white;
+    animation: doimau ease-in-out 2s infinite ;
+}
+@keyframes doimau {
+    0% {color: rgb(255, 255, 255);}
+    25% {color: #f40a54;}
+    50%{ color: #33beed;}
+    100% {color: #edfd09;}
+}
+body{
+   
+}
+.menu{
+    display: flex;
+    
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 700;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+    border-radius: 5px;
+   
+
+}
+.menu a:hover{
+    border-bottom: 2px solid white;
+    padding: 10px 20px ;
+    background-color: hsl(217, 51%, 36%);
+}
+.menu1{
+    display: none;
+    padding: 10px;
+}
+.menu li:hover .menu1 {
+    display: block;
+    position: absolute;
+ 
+}
+.menu li:hover .menu1 ul {
+    display: block;
+    margin-left:-15px;
+    padding: 0px;
+}
+.menu li:hover .menu1 ul li {
+   padding: 10px;
+}
+
+.menu1 li:hover .menu2 ul li {
+   padding: 0 0;
+   
+}
+
+.hero{
+    height: 440%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #57C5B6 0%, #159895 28.53%, #1A5F7A 75.52%);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+
+}
+section{
+    padding: 0 19%;
+}
+.hero-text h5{
+    font-size:14px;
+    font-weight:400;
+    color: white;
+    margin-bottom: 30px;
+}
+.hero-text h1{
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 90px;
+    font-weight: 600;
+    line-height: 1;
+    color: white;
+    margin: 0 0 45px;
+    animation: doimau1 ease 2s infinite;
+}
+@keyframes doimau1 {
+    from{ color: white;}
+    to{color: #09c0fd;}
+}
+.hero-text h4{
+    font-size:18px;
+    font-weight: 600;
+    color:white;
+    margin-bottom: 10px;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+.hero-text p{
+    color: white;
+    font-weight: 400;
+}
+
+/*.hero-img li a{
+    padding: 40% 20%;
+    margin-top: 100px;
+    width: 30%;
+    transition: all .55s ease;
+    
+}
+.hero-img li a:hover{
+    opacity: 0%;
+    
+}*/
+.hero-img img{
+    margin: 0 20%;
+    margin-top: 120px;
+
+}
+.hero-img h3{
+    width: 200px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    background:transparent ;
+   
+}
+button{
+    border-radius: 20px;
+    background-color:  #fa800e;
+    transition: all .55s ease;
+    
+}
+button:hover{
+    background-color: #b05308;
+
+}
+/*Css thanh tìm kiếm*/
+#search{
+    background: white;
+    border-radius: 30px;
+    width: 75%;
+    margin-top: 20px;
+}
+#search-text{
+    width: 85%;
+    border-radius: 30px;
+    padding-left: 10px;
+   border: none;
+}
+#search #search-text{
+    background: none;
+    padding: 10px 14px ;
+    font-size: 20px;
+}
+#search-btn{
+    background: transparent;
+    border: none;
+    padding: 2px;
+    cursor: pointer;
+    border-radius: 40%;
+    height: 50px;
+    margin-left: 7px; 
+    animation: doimau2 ease 2s infinite;
+}
+@keyframes doimau2{
+    0% {color: rgb(189, 198, 210);}
+    25% {color: #f40a54;}
+    50%{ color: #6e0a8c;}
+    100% {color: #a80961;}
+
+}
+/*Sản phẩm*/
+#sp{
+    height: 210px;
+    margin-top: 20px;
+    margin-left: -20PX;
+    background-color:rgb(8, 104, 156);
+    border-radius: 40px;
+    border: 4px solid white;
+    animation: dmborder ease 2s infinite;
+    background-image: url(https://scontent.xx.fbcdn.net/v/t1.15752-9/338323408_138041939033531_2277545719030349413_n.png?stp=dst-png_p206x206&_nc_cat=107&ccb=1-7&_nc_sid=aee45a&_nc_ohc=3fCFnZ1Z1yIAX9aBH6E&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRl3iPlKfxCS188m4daMRZ9j2V5ygzRxC8cVsgyV0AzNQ&oe=6450CD3C);
+    animation: bgr ease 8s infinite;
+}
+@keyframes dmborder{
+    0% {border-color: rgb(255, 255, 255);}
+    25% {border-color: #f73166;}
+    50%{ border-color: #33beed;}
+    100% {border-color: #edfd09;}
+}
+@keyframes bgr{
+    
+    0%{background-image: url(https://scontent.xx.fbcdn.net/v/t1.15752-9/338323408_138041939033531_2277545719030349413_n.png?stp=dst-png_p206x206&_nc_cat=107&ccb=1-7&_nc_sid=aee45a&_nc_ohc=3fCFnZ1Z1yIAX9aBH6E&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRl3iPlKfxCS188m4daMRZ9j2V5ygzRxC8cVsgyV0AzNQ&oe=6450CD3C);}
+    50%{background-image: url(https://scontent.xx.fbcdn.net/v/t1.15752-9/338125066_789011889173941_5949153782858080895_n.png?stp=dst-png_p206x206&_nc_cat=109&ccb=1-7&_nc_sid=aee45a&_nc_ohc=FT1xniA4qMMAX8PliTL&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSThtszgf5-wj6j_dE_yVn4UMXluWty45YdXY7riM8v0w&oe=6450C5F7);}
+    100%{background-image: url(https://scontent.xx.fbcdn.net/v/t1.15752-9/338015300_686988463427025_8538310032871397908_n.png?stp=dst-png_p206x206&_nc_cat=106&ccb=1-7&_nc_sid=aee45a&_nc_ohc=NZ7xSjI50-4AX-Z5nAM&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdR7MSjVxvBKM4eCzEemXKuHPlBOmnpF-R5RPdvNO16j_Q&oe=6450BBA3);}
+}
+#sp button{
+    border-radius: 10px;
+    margin-top: 220px;
+    margin-left: 150px;
+    background-color: #f8320f;
+
+}
+#sp button:hover{
+    background-color: #a80961;
+}
+/*///////////////////////////////////////////*/
+body{
+    background: linear-gradient(245.59deg, #57C5B6 0%, #159895 28.53%, #1A5F7A 75.52%);
+
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    height: 25px;
+    background-image: linear-gradient(-30deg, transparent 35%, #b2ecf5 97%, transparent 75%, transparent);
+  }
+.bd1 h2{
+   text-align: center;
+   background-color: white;
+   font-size: 25px;
+   font-family: 'Pacifico', cursive;
+   font-weight: 600;
+}
+.sanpham{
+    margin-left: 8%;
+    margin-top: 100px;
+    width: 24% ;
+    float: left;
+    height:300px;
+    background-color: rgb(171, 247, 233);
+    border-radius: 20px ;
+    border: 3px solid white;
+    animation: dmborder ease 2s infinite;
+    overflow: hidden;
+}
+.sanpham:hover{
+    box-shadow: 20px 20px 10px rgba(2, 2, 2, 0.5);
+    transform: translateY(-10px);
+}
+.sanpham img{
+    width: 40%;
+    margin-left:30% ;
+    transition: all .50s ease;
+}
+.sanpham p{
+    padding-left:10px ;
+    font-weight: 700;
+    font-size: 19px;
+    display: flex;
+    float: left;
+}
+.sanpham a{
+    text-decoration: none;
+    margin-left:30px;
+    font-weight: 700;
+    font-size: 20px;
+    color: black;
+}
+.sanpham a:hover{
+    color: red;
+}
+.sanpham input{
+    margin-left: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+.sanpham button{
+    margin-left: -20px;
+    margin-top: 20px;
+    padding: 2%;
+    border-radius: 15px;
+    font-weight: 600;
+}
+.sanpham-1{
+    margin-left: 6%;
+    margin-top: 100px;
+    width: 90% ;
+    float: left;
+    height:600px;
+    background-color: transparent;
+    background-image: ;
+    border-radius: 100px ;
+    overflow: hidden;
+}
+.sanpham-summer{
+    margin-left: 6%;
+    margin-top: 100px;
+    width: 90% ;
+    float: left;
+    height:600px;
+    background-color: transparent;
+    background-image: url(https://i.pinimg.com/564x/7e/b3/43/7eb34304a07693fe8abae1d9da076e82.jpg) ;
+    border-radius: 100px ;
+    overflow: hidden;
+    border: 2px solid white;
+}
+.sanpham-winter{
+    margin-left: 6%;
+    margin-top: 100px;
+    width: 90% ;
+    float: left;
+    height:600px;
+    background-color: transparent;
+    background-image: url(https://i.pinimg.com/564x/7b/7a/58/7b7a58a592cc1076574fc67c1e94b0e0.jpg) ;
+    border-radius: 100px ;
+    overflow: hidden;
+    border: 2px solid white;
+}
+/*.sanpham img:hover{
+    margin-left: 15%;
+    width: 70%;
+    
+}*/
+.sanpham h3{
+    text-align: center;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+/*//////////////////*/
+.footer{
+    width: 100%;
+    height: 300px;
+    background-color: #9dd8f0;
+    margin-top: 230%;
+    border-top: 10px solid rgb(53, 205, 239) ;
+}
+.grid-1{
+    float: left;
+    padding-left: 4%;
+    padding-top: 10px ;
+    padding-right: 10px;
+    width: 30%;
+}
+.grid-1 ul li {
+    font-size: 15px;
+    font-weight: 700;
+    padding-top: 3px;
+    
+}
+.grid-1 ul li a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #a80961;
+}
+.giohang{
+    
+}
+.giohang img{
+    background: transparent;
+    margin-top: -25px;
+    width: 70px;
+    height: 70px;
+    z-index: 1002;
+    position: absolute;
+    
+}
+.giohang img:hover{
+    box-shadow: 0px 0px 10px rgba(253, 4, 4, 0.5);
+    transform: translateY(-10px);
+    border-radius:100px ;
+  
+}
+#showcart{
+    position:absolute;
+    max-height: 300px;
+    height: 200px;
+    margin-top: 350px;
+    width: 25%;
+    background: #ece6b4;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    outline: none;
+    margin-left: 70%;
+    z-index: 1003;
+    border-radius: 10px;
+    overflow: auto;
+    box-shadow: 10px 10px 10px rgba(2, 2, 2, 0.5);
+}
+#showcart table{
+    border-radius: 20px;
+}
+#showcart table tr{
+    border: 2px solid black; 
+    text-align: center;
+    border-radius: 30px; 
+}
+#showcart table tr th{
+    border: 2px solid black;
+   
+}
+#showcart table tr td{
+    border: 2px solid black;
+}
+#showcart a{
+    margin-left: 40%;
+    text-decoration: none;
+    background: transparent;
+    color: black;
+    border-radius: 10px;
+    font-weight: 600;
+    position: absolute;
+}
+#showcart a:hover{
+    background: #a5a6a7;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+.carousel-control-prev span{
+    background-color: rgb(22, 192, 141);
+    border-radius: 15px;
+    width: 20%;
+    height: 7%;
+    border: 1px solid white;
+}
+.carousel-control-next span{
+    background-color: rgb(214, 54, 54);
+    border-radius: 15px;
+    width: 20%;
+    height: 7%;
+    border: 1px solid white;
+}

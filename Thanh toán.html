@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4SS-Thời trang 4 mùa</title>
+    <link rel="stylesheet" href="Css/Style.css">
+    <link rel="stylesheet" href="Css/dangnhap.css">
+    <link rel="stylesheet" href="Css/thanhtoan.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"  />
+    
+    
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">4-SEASONS</a>
+        <ul class="menu">
+            <li><h3>Thanh toán hóa đơn</h3> </li>
+            <li><a href="Trang chủ.html">Tiếp tục mua sắm</a> </a></li>
+        
+        </ul>
+    </header>
+    <section class="hero">
+       <div id="ttgiohang"> 
+        <tr>
+            <td>❶ Giỏ hàng</td>
+            <td>一一一</td>
+            <td>➁ Đặt hàng</td>
+            <td>一一一</td>
+            <td>➂ Hoàn tất</td>
+            <td></td>
+        </tr>
+       </div>
+        <div id="thongtinkh">
+            <h1 style="font-family: 'Montserrat'; font-weight: 600;">Thông tin nhận hàng</h1>
+            <table>
+                <tr>
+                    <td>Họ và tên </td>
+                    <td><input type="text" name="fullname" placeholder="Nhập họ tên của bạn" ></td>
+                </tr>
+                <tr>
+                    <td>Địa chỉ </td>
+                    <td><input type="text" name="fullname" placeholder="Nhập họ tên của bạn" ></td>
+                </tr>
+                <tr>
+                    <td>Điện thoại </td>
+                    <td><input type="text" name="sdt" placeholder="Nhập số điện thoại" pattern="[0-9]" ></td>
+                </tr>
+                <tr>
+                    <td>Email </td>
+                    <td><input type="email" name="fullname" placeholder="Nhập họ tên của bạn" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" ></td>
+                </tr>
+            </table>
+        </div>
+       
+        <div id="showcart_tt">
+            <h1 style="font-family: 'Montserrat'; font-weight: 600;">Giỏ hàng</h1>
+            <table>
+                <tr>
+                    <th>STT</th>
+                    <th>Hình</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Đơn giá</th>
+                    <th>Số lượng</th>
+                    <th>Thành tiền (đ)</th>
+                </tr>
+                <tbody id="mycart">
+
+                </tbody>
+            </table>
+    </section>
+    <script src="js/Giohang.js"></script>
+    <script>
+        showgiohang_thanhtoan();
+    </script>
+</body>
+</html>

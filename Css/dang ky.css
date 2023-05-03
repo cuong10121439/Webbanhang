@@ -1,0 +1,62 @@
+#wrapper{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form-login{
+    max-width:90%;
+    background:rgba(13, 105, 180, 0.9) ;
+    flex-grow: 1;
+    padding: 30px 30px 40px;
+    box-shadow:0px 0px 17px rgba(239, 202, 210, 0.9);
+    border-radius: 10px;
+    margin-left: 90px;
+}
+.form-heading{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.form-group{
+    border-bottom: 1px solid white;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.form-group i{
+    color: white;
+}
+.form-input{
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: white;
+}
+::placeholder{
+    opacity:50% ;
+}
+.form-input::placeholder{
+    color: white;
+}
+.form-submit{
+    background: transparent;
+    color: white;
+    width: 100%;
+    height: 30px;
+    
+}
+.luu button:hover{
+    border:  1px solid rgb(18, 95, 177);
+    background-color: rgb(113, 230, 175);
+
+}
+.luu button{
+    width: 100%;
+    height: 30px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    padding: 6x 10px;
+    transition: 0.25s ease-in-out; 
+    border:  1px solid white;
+}

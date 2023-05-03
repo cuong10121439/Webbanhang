@@ -1,0 +1,72 @@
+.menu h3{
+    padding-right: 470px;
+    font-weight: 700;
+    color: white;
+    font-family: 'Montserrat';
+}
+.menu a{
+  position: absolute;
+  margin-left: -100px;
+  margin-top: 15px;
+}
+#ttgiohang{
+    position:absolute;
+    margin-left: 30%;
+    margin-bottom: 32%;
+    width: 40%;
+    height: 50px;
+    border: 1px soli black;
+    outline: none;
+    z-index: 1006;
+    text-align: center;
+    font-family:'Montserrat' ;
+    font-size: 19px;
+    color: aliceblue;
+}
+#showcart_tt{
+    position:absolute;
+    margin-left: 31%;
+    max-height: 360px;
+    height: 50%;
+    width: 65%;
+    border: 1px soli black;
+    outline: none;
+    z-index: 1004;
+    text-align: center;
+    background: #88c7ef;border:5px solid snow;
+    z-index: 1003;
+    overflow: auto;
+    font-weight: 600;
+}
+#thongtinkh{
+    position:absolute;
+    margin-left: 5%;
+    height: 360px;
+    width: 25%;
+    border: 1px soli black;
+    outline: none;
+    z-index: 1004;
+    text-align: center;
+    background: #88c7ef;border: 5px solid snow;
+}
+table td {
+    width: 20%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding: 10px;font-weight: 600;
+}
+table th {
+    width: 20%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding: 10px;font-weight: 600;
+    background-color: rgb(176, 212, 250);
+}
+  input{
+    width: 200px;
+    height: 40px;
+    background-color: #b1defa;
+    border-radius: 15px;
+    
+  }
+  
